@@ -25,12 +25,12 @@ const RSVP_URL = 'https://script.google.com/macros/s/AKfycbzyfr8jXEjSLu7yWaCN1G6
 
 // m: link Google Maps ghim vị trí (nên điền, vì địa chỉ nông thôn thường tìm không chính xác). Để trống = tìm theo địa chỉ.
 const EVENTS = [
-  { t: 'Đãi tiệc trước Lễ vu quy', at: '2026-11-23T13:00:00+07:00', s: 'Được tổ chức vào lúc 13:00, Thứ Hai', d: '23', l: '15 tháng 10 năm Bính Ngọ',
-    p: 'Tại tư gia nhà gái', a: 'Ấp Trung Điền, Xã Long Điền Đông, Cà Mau', m: '',
-    en: { t: 'Pre-ceremony celebration', s: 'Monday at 1:00 PM', l: '(15th day of the 10th lunar month, Year of the Horse)', p: 'At the bride’s family home', a: 'Trung Điền Hamlet, Long Điền Đông Commune, Cà Mau' } },
-  { t: 'Đãi tiệc sau Lễ vu quy', at: '2026-11-24T10:00:00+07:00', s: 'Được tổ chức vào lúc 10:00, Thứ Ba', d: '24', l: '16 tháng 10 năm Bính Ngọ',
-    p: 'Tại tư gia nhà gái', a: 'Ấp Trung Điền, Xã Long Điền Đông, Cà Mau', m: '',
-    en: { t: 'Post-ceremony celebration', s: 'Tuesday at 10:00 AM', l: '(16th day of the 10th lunar month, Year of the Horse)', p: 'At the bride’s family home', a: 'Trung Điền Hamlet, Long Điền Đông Commune, Cà Mau' } }
+  { t: 'Lễ Thành hôn', at: '2026-11-28T09:00:00+07:00', s: 'Được tổ chức vào lúc 09:00, Thứ Bảy', d: '28', l: '20 tháng 10 năm Bính Ngọ',
+    p: 'Tại tư gia nhà trai', a: 'Thôn Phú Tân 2, Xã Ô Loan 2, Đăk Lăk', m: '',
+    en: { t: 'Wedding Ceremony 💍', s: 'Saturday at 9:00 AM', l: '(20th day of the 10th lunar month, Year of the Horse)', p: 'At the groom’s family home', a: 'Phú Tân 2 Hamlet, Ô Loan Commune, Đăk Lăk' } },
+  { t: 'Đãi tiệc sau Lễ Thành hôn', at: '2026-11-28T16:30:00+07:00', s: 'Được tổ chức vào lúc 16:30, Thứ Bảy', d: '28', l: '20 tháng 10 năm Bính Ngọ',
+    p: 'Tại Nhà Hàng Tiệc cưới 464', a: 'Khu phố Trường Xuân, Xã Tuy An Bắc, Đăk Lăk', m: 'https://maps.app.goo.gl/2rbihpKLG1z6gM2E7',
+    en: { t: 'Wedding Reception', s: 'Saturday at 04:30 PM', l: '(20th day of the 10th lunar month, Year of the Horse)', p: 'At Nhà hàng Tiệc cưới 464 (464 Wedding Restaurant)', a: 'Tuy An Bắc Commune, Đăk Lăk' } }
 ];
 /* ============================================ */
 
