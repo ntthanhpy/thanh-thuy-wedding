@@ -28,7 +28,7 @@ const EVENTS = [
   { t: 'Lễ Thành hôn', at: '2026-11-28T09:00:00+07:00', s: 'Được tổ chức vào lúc 09:00, Thứ Bảy', d: '28', l: '20 tháng 10 năm Bính Ngọ',
     p: 'Tại tư gia nhà trai', a: 'Thôn Phú Tân 2, Xã Ô Loan 2, Đăk Lăk', m: '',
     en: { t: 'Wedding Ceremony 💍', s: 'Saturday at 9:00 AM', l: '(20th day of the 10th lunar month, Year of the Horse)', p: 'At the groom’s family home', a: 'Phú Tân 2 Hamlet, Ô Loan Commune, Đăk Lăk' } },
-  { t: 'Đãi tiệc sau Lễ Thành hôn', at: '2026-11-28T16:30:00+07:00', s: 'Được tổ chức vào lúc 16:30, Thứ Bảy', d: '28', l: '20 tháng 10 năm Bính Ngọ',
+  { t: 'Đãi tiệc sau Lễ Thành hôn', at: '2026-11-28T10:30:00+07:00', s: 'Được tổ chức vào lúc 10:30, Thứ Bảy', d: '28', l: '20 tháng 10 năm Bính Ngọ',
     p: 'Tại Nhà Hàng Tiệc cưới 464', a: 'Khu phố Trường Xuân, Xã Tuy An Bắc, Đăk Lăk', m: 'https://maps.app.goo.gl/2rbihpKLG1z6gM2E7',
     en: { t: 'Wedding Reception', s: 'Saturday at 04:30 PM', l: '(20th day of the 10th lunar month, Year of the Horse)', p: 'At Nhà hàng Tiệc cưới 464 (464 Wedding Restaurant)', a: 'Tuy An Bắc Commune, Đăk Lăk' } }
 ];
