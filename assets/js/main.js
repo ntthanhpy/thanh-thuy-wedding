@@ -26,10 +26,12 @@ const RSVP_URL = 'https://script.google.com/macros/s/AKfycbzyfr8jXEjSLu7yWaCN1G6
 // m: link Google Maps ghim vị trí (nên điền, vì địa chỉ nông thôn thường tìm không chính xác). Để trống = tìm theo địa chỉ.
 const EVENTS = [
   { t: 'Lễ Thành hôn', at: '2026-11-28T09:00:00+07:00', s: 'Được tổ chức vào lúc 09:00, Thứ Bảy', d: '28', l: '20 tháng 10 năm Bính Ngọ',
-    p: 'Tại tư gia nhà trai', a: 'Thôn Phú Tân 2, Xã Ô Loan 2, Đăk Lăk', m: '',
+    p: 'Tại tư gia nhà trai', a: 'Thôn Phú Tân 2, Xã Ô Loan, Đăk Lăk', m: '',
+    ja: { t: '結婚式', s: '2026年11月28日（土）午前9時（ベトナム時間・UTC+7）', l: '（ベトナム旧暦：丙午年10月20日）', p: '新郎の自宅にて', a: 'Đăk Lăk省 Ô Loan村 Phú Tân 2集落' },
     en: { t: 'Wedding Ceremony 💍', s: 'Saturday at 9:00 AM', l: '(20th day of the 10th lunar month, Year of the Horse)', p: 'At the groom’s family home', a: 'Phú Tân 2 Hamlet, Ô Loan Commune, Đăk Lăk' } },
   { t: 'Đãi tiệc sau Lễ Thành hôn', at: '2026-11-28T10:30:00+07:00', s: 'Được tổ chức vào lúc 10:30, Thứ Bảy', d: '28', l: '20 tháng 10 năm Bính Ngọ',
     p: 'Tại Nhà Hàng Tiệc cưới 464', a: 'Khu phố Trường Xuân, Xã Tuy An Bắc, Đăk Lăk', m: 'https://maps.app.goo.gl/2rbihpKLG1z6gM2E7',
+    ja: { t: '結婚披露宴', s: '2026年11月28日（土）午前10時30分（ベトナム時間・UTC+7）', l: '（ベトナム旧暦：丙午年10月20日）', p: 'Nhà Hàng Tiệc cưới 464（464ウェディングレストラン）', a: 'Đăk Lăk省 Tuy An Bắc村 Trường Xuân地区' },
     en: { t: 'Wedding Reception', s: 'Saturday at 10:30 AM', l: '(20th day of the 10th lunar month, Year of the Horse)', p: 'At Nhà hàng Tiệc cưới 464 (464 Wedding Restaurant)', a: 'Tuy An Bắc Commune, Đăk Lăk' } }
 ];
 /* ============================================ */
@@ -52,10 +54,10 @@ $$('[data-p]').forEach(e => {
 const ring = '<svg class="ring" viewBox="0 0 44 30" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="16" cy="18" r="9"/><circle cx="28" cy="18" r="9"/><path d="M13 5l3-3 3 3-3 4z"/></svg>';
 $('#events').innerHTML = EVENTS.map(e => {
   const map = e.m || 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(e.a);
-  return `<div class="ev rv">${ring}<h2 data-en="${e.en.t}">${e.t}</h2><div class="s" data-en="${e.en.s}">${e.s}</div>
-<div class="dr"><span data-en="NOVEMBER">THÁNG 11</span><b>${e.d}</b><span data-en="YEAR 2026">NĂM 2026</span></div><div class="lun" data-en="${e.en.l}">(Tức ngày ${e.l})</div>
-<h3 data-en="${e.en.p}">${e.p}</h3><div class="ad" data-en="${e.en.a}">${e.a}</div>
-<a class="btn sm" target="_blank" rel="noopener" href="${map}" data-en="Get directions">Xem chỉ đường</a></div>`;
+  return `<div class="ev rv">${ring}<h2 data-en="${e.en.t}" data-ja="${e.ja.t}">${e.t}</h2><div class="s" data-en="${e.en.s}" data-ja="${e.ja.s}">${e.s}</div>
+<div class="dr"><span data-en="NOVEMBER" data-ja="11月">THÁNG 11</span><b>${e.d}</b><span data-en="YEAR 2026" data-ja="2026年">NĂM 2026</span></div><div class="lun" data-en="${e.en.l}" data-ja="${e.ja.l}">(Tức ngày ${e.l})</div>
+<h3 data-en="${e.en.p}" data-ja="${e.ja.p}">${e.p}</h3><div class="ad" data-en="${e.en.a}" data-ja="${e.ja.a}">${e.a}</div>
+<a class="btn sm" target="_blank" rel="noopener" href="${map}" data-en="Get directions" data-ja="地図・アクセス">Xem chỉ đường</a></div>`;
 }).join('');
 
 // Album: các ảnh chưa dùng ở vị trí cố định
@@ -163,6 +165,7 @@ curtain.addEventListener('click', () => {
   lead.className = 'welcome-lead';
   lead.textContent = name ? 'Chào mừng' : 'Chào mừng bạn';
   lead.dataset.en = 'Welcome';
+  lead.dataset.ja = 'ようこそお越しくださいました';
   welcome.append(lead);
   if (name) {
     const displayName = document.createElement('bdi');
@@ -176,6 +179,7 @@ curtain.addEventListener('click', () => {
   caption.className = 'welcome-caption';
   caption.textContent = 'đến với thiệp cưới online của chúng mình';
   caption.dataset.en = 'to our online wedding invitation';
+  caption.dataset.ja = '私たちの結婚のご案内をご覧いただき、ありがとうございます';
   welcome.append(caption);
   panel.append(welcome, seal, hint);
   content.append(panel);
@@ -190,7 +194,7 @@ function tick() {
   const now = Date.now();
   const k = times.findIndex(t => t > now);
   const t = k === -1 ? times[times.length - 1] : times[k];
-  $('#cdl').textContent = k === -1 ? '' : (currentLanguage === 'en' ? 'Until the ' + EVENTS[k].en.t.toLowerCase() : 'Đến ' + EVENTS[k].t.toLowerCase());
+  $('#cdl').textContent = k === -1 ? '' : tr('Đến ' + EVENTS[k].t.toLowerCase(), 'Until the ' + EVENTS[k].en.t.toLowerCase(), EVENTS[k].ja.t + 'まで（ベトナム時間・UTC+7）');
   const s = Math.max(0, t - now) / 1000 | 0;
   [s / 86400 | 0, s % 86400 / 3600 | 0, s % 3600 / 60 | 0, s % 60].forEach((v, i) => { nums[i].textContent = String(v).padStart(2, '0'); });
 }
@@ -212,7 +216,7 @@ const AUTO_SCROLL_SPEED = 24; // pixel/giây; chỉnh số này để thay đổ
 let autoRunning = false, autoFrame = 0, autoDelay = 0, lastFrame = 0, autoPosition = 0;
 function updateAutoButton() {
   autoButton.hidden = false;
-  autoButton.textContent = autoRunning ? tr('Ⅱ Dừng tự cuộn', 'Ⅱ Pause auto-scroll') : tr('▶ Tự cuộn', '▶ Auto-scroll');
+  autoButton.textContent = autoRunning ? tr('Ⅱ Dừng tự cuộn', 'Ⅱ Pause auto-scroll', 'Ⅱ 自動スクロールを停止') : tr('▶ Tự cuộn', '▶ Auto-scroll', '▶ 自動スクロール');
   autoButton.setAttribute('aria-pressed', String(autoRunning));
 }
 function stopAutoScroll() {
@@ -262,28 +266,42 @@ document.addEventListener('visibilitychange', () => { if (document.hidden && (au
 if (reducedMotion.addEventListener) reducedMotion.addEventListener('change', e => { if (e.matches && (autoRunning || autoDelay)) stopAutoScroll(); });
 
 // Thông báo nhỏ
-const toast = m => {
-  const t = $('#toast'); t.textContent = m; t.classList.add('on');
+const toast = (vi, en, ja, suffix = '') => {
+  const t = $('#toast');
+  t.dataset.viText = vi + suffix; t.dataset.en = en + suffix; t.dataset.ja = ja + suffix;
+  t.textContent = tr(vi, en, ja) + suffix; t.classList.add('on');
   clearTimeout(toast.id); toast.id = setTimeout(() => t.classList.remove('on'), 2800);
 };
 
 // Gửi lời chúc
 $('#send').onclick = function () {
   const n = $('#nm'), w = $('#ws'), a = $('#at');
-  if (!n.value.trim()) { n.focus(); toast(tr('Bạn vui lòng nhập tên nhé', 'Please enter your name.')); return; }
+  if (!n.value.trim()) { n.focus(); toast('Bạn vui lòng nhập tên nhé', 'Please enter your name.', 'お名前をご記入ください。'); return; }
   const data = { name: n.value.trim(), wish: w.value.trim(), attend: a.value, time: new Date().toISOString() };
   const d = document.createElement('div'), b = document.createElement('b');
   b.textContent = data.name;
-  d.append(b, data.wish || (data.attend && a.options[a.selectedIndex].textContent) || tr('Chúc hai bạn trăm năm hạnh phúc!', 'Wishing you a lifetime of happiness!'));
+  d.append(b);
+  const message = document.createElement('span');
+  if (data.wish) {
+    message.textContent = data.wish; // User-written messages are never translated.
+  } else {
+    const option = a.options[a.selectedIndex];
+    const vi = data.attend || 'Chúc hai bạn trăm năm hạnh phúc!';
+    const en = data.attend ? option.dataset.en : 'Wishing you a lifetime of happiness!';
+    const ja = data.attend ? option.dataset.ja : 'お二人の末永いお幸せをお祈り申し上げます。';
+    message.dataset.viText = vi; message.dataset.en = en; message.dataset.ja = ja;
+    message.textContent = tr(vi, en, ja);
+  }
+  d.append(message);
   $('#wl').prepend(d);
   if (RSVP_URL) {
     fetch(RSVP_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(data) })
       .then(() => console.log('Đã gửi yêu cầu tới Google Sheet'))
-      .catch(err => { console.error('Gửi lời chúc lỗi:', err); toast(tr('Chưa gửi được, bạn thử lại sau nhé', 'Unable to send. Please try again.')); });
+      .catch(err => { console.error('Gửi lời chúc lỗi:', err); toast('Chưa gửi được, bạn thử lại sau nhé', 'Unable to send. Please try again.', '送信できませんでした。しばらくしてから、もう一度お試しください。'); });
   } else console.warn('RSVP_URL đang trống nên lời chúc chưa được gửi đi');
   n.value = w.value = ''; a.value = '';
   this.disabled = true; setTimeout(() => { this.disabled = false; }, 3000);
-  toast(tr('Cảm ơn bạn đã gửi lời chúc ♡', 'Thank you for your wishes ♡'));
+  toast('Cảm ơn bạn đã gửi lời chúc ♡', 'Thank you for your wishes ♡', '温かいお祝いのメッセージをありがとうございます ♡');
 };
 
 // Hộp mừng cưới
@@ -292,7 +310,7 @@ $('#gift-open').onclick = () => gift.showModal();
 $('#gift-close').onclick = () => gift.close();
 gift.addEventListener('click', e => { if (e.target === gift) gift.close(); });
 $$('.cp').forEach(b => b.onclick = async () => {
-  try { await navigator.clipboard.writeText(b.dataset.c); toast(tr('Đã sao chép số tài khoản', 'Account number copied')); }
-  catch (e) { toast(tr('Hãy nhấn giữ để sao chép: ', 'Press and hold to copy: ') + b.dataset.c); }
+  try { await navigator.clipboard.writeText(b.dataset.c); toast('Đã sao chép số tài khoản', 'Account number copied', '口座番号をコピーしました'); }
+  catch (e) { toast('Hãy nhấn giữ để sao chép: ', 'Press and hold to copy: ', '長押ししてコピーしてください：', b.dataset.c); }
 });
 
