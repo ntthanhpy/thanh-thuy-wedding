@@ -1,4 +1,8 @@
-# Thiệp song ngữ Việt – Anh
+# Tài liệu lịch sử — đã thay thế ngày 17/11/2026
+
+**Xem [HUONG_DAN_BA_NGU.md](HUONG_DAN_BA_NGU.md) cho bản v2.1 Việt–Anh–Nhật. Không áp dụng các bước cập nhật và lịch sự kiện cũ bên dưới.** Mã GitHub hiện dùng ảnh QR `assets/images/thanhnt2.jpg` và hai sự kiện ngày 28/11/2026 lúc 09:00, 10:30 (giờ Việt Nam), thay cho lịch 23–24/11 và ảnh `vietqr.png` trong tài liệu lịch sử này.
+
+# Thiệp song ngữ Việt – Anh (nội dung lịch sử)
 
 ## Dùng và chia sẻ
 - Nhấn **VI** hoặc **EN** ở góc trên bên trái. Có thể chọn ngay trước khi mở thiệp.

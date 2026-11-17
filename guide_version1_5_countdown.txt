@@ -1,4 +1,7 @@
-CẬP NHẬT BỘ ĐẾM V1.5
+TÀI LIỆU LỊCH SỬ — ĐÃ ĐƯỢC THAY THẾ NGÀY 17/11/2026
+Không áp dụng các giờ 23–24/11 bên dưới cho bản v2.1. Mã nguồn GitHub hiện tại có hai sự kiện ngày 28/11/2026 lúc 09:00 và 10:30 (UTC+7). Xem HUONG_DAN_BA_NGU.md và báo cáo review trước khi chỉnh sửa.
+
+CẬP NHẬT BỘ ĐẾM V1.5 (nội dung lịch sử)
 
 Dành cho project song ngữ v1.4. Giải nén, thay file assets/js/main.js trong project bằng file cùng đường dẫn trong gói này, rồi commit và push lên GitHub Pages. Tải lại trang bằng Ctrl+F5.
 
