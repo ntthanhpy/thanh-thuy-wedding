@@ -1,0 +1,301 @@
+{
+  "buttons": [
+    "vi",
+    "en"
+  ],
+  "language": "ja",
+  "missing": [
+    {
+      "id": "seal",
+      "kind": "enAria",
+      "tag": "BUTTON",
+      "text": "Open wedding invitation"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "DIV",
+      "text": "Tap to open the invitation"
+    },
+    {
+      "id": "musicBtn",
+      "kind": "enAria",
+      "tag": "BUTTON",
+      "text": "Toggle music"
+    },
+    {
+      "id": "",
+      "kind": "enHtml",
+      "tag": "P",
+      "text": "“Marriage is a lifelong journey:<br>love the one you choose, and choose the one you love.”"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "SPAN",
+      "text": "Together with our families, we invite"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "H3",
+      "text": "Groom’s family"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "SPAN",
+      "text": "Mr. Nguyễn Khắc Ngân"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "SPAN",
+      "text": "Mrs. Trần Thị Kiều Hạnh"
+    },
+    {
+      "id": "",
+      "kind": "enHtml",
+      "tag": "SMALL",
+      "text": "Phú Tân 2 Hamlet,<br>Ô Loan Commune, Đắk Lắk"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "H3",
+      "text": "Bride’s family"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "SPAN",
+      "text": "Mr. Quách Văn Khởi"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "SPAN",
+      "text": "Mrs. Lê Hồng Nhẫn"
+    },
+    {
+      "id": "",
+      "kind": "enHtml",
+      "tag": "SMALL",
+      "text": "Trung Điền Hamlet,<br>Long Điền Đông Commune, Cà Mau"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "SMALL",
+      "text": "GROOM"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "SMALL",
+      "text": "BRIDE"
+    },
+    {
+      "id": "",
+      "kind": "enHtml",
+      "tag": "P",
+      "text": "Together with our families,<br>we warmly invite you to celebrate with us"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "H2",
+      "text": "GOLDEN MOMENTS"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "P",
+      "text": "Our story is made of simple, beautiful moments, and today we are delighted to share them with the people we love."
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "H2",
+      "text": "Send your wishes"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "P",
+      "text": "Your presence means the world to us."
+    },
+    {
+      "id": "nm",
+      "kind": "enAria",
+      "tag": "INPUT",
+      "text": "Your name"
+    },
+    {
+      "id": "nm",
+      "kind": "enPlaceholder",
+      "tag": "INPUT",
+      "text": "Your name"
+    },
+    {
+      "id": "ws",
+      "kind": "enAria",
+      "tag": "TEXTAREA",
+      "text": "Your wishes"
+    },
+    {
+      "id": "ws",
+      "kind": "enPlaceholder",
+      "tag": "TEXTAREA",
+      "text": "Write your wishes"
+    },
+    {
+      "id": "at",
+      "kind": "enAria",
+      "tag": "SELECT",
+      "text": "RSVP"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "OPTION",
+      "text": "RSVP"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "OPTION",
+      "text": "Joyfully attending"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "OPTION",
+      "text": "Regretfully unable to attend"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "OPTION",
+      "text": "Not sure yet"
+    },
+    {
+      "id": "send",
+      "kind": "en",
+      "tag": "BUTTON",
+      "text": "Send wishes & RSVP"
+    },
+    {
+      "id": "gift-open",
+      "kind": "en",
+      "tag": "BUTTON",
+      "text": "Send a wedding gift"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "SPAN",
+      "text": "Days"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "SPAN",
+      "text": "Hours"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "SPAN",
+      "text": "Minutes"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "SPAN",
+      "text": "Seconds"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "SPAN",
+      "text": "Thank you for taking the time to celebrate with our families. Your presence is our greatest joy on this special day."
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "H2",
+      "text": "Wedding gift"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "B",
+      "text": "Groom · Tan Thanh"
+    },
+    {
+      "id": "",
+      "kind": "en",
+      "tag": "BUTTON",
+      "text": "Copy account number"
+    },
+    {
+      "id": "",
+      "kind": "enAlt",
+      "tag": "IMG",
+      "text": "Wedding gift VietQR code"
+    },
+    {
+      "id": "gift-close",
+      "kind": "en",
+      "tag": "BUTTON",
+      "text": "Close"
+    },
+    {
+      "id": "lb",
+      "kind": "enAria",
+      "tag": "DIV",
+      "text": "View photo"
+    },
+    {
+      "id": "",
+      "kind": "enAria",
+      "tag": "BUTTON",
+      "text": "Close"
+    },
+    {
+      "id": "",
+      "kind": "enAria",
+      "tag": "BUTTON",
+      "text": "Previous photo"
+    },
+    {
+      "id": "",
+      "kind": "enAlt",
+      "tag": "IMG",
+      "text": "Tấn Thành and Diễm Thùy wedding photo"
+    },
+    {
+      "id": "",
+      "kind": "enAria",
+      "tag": "BUTTON",
+      "text": "Next photo"
+    }
+  ],
+  "missingCount": 46,
+  "url": "https://ntthanhpy.github.io/thanh-thuy-wedding/?lang=ja",
+  "fix": {
+    "file": "index.html",
+    "beforeMissingJapanese": 46,
+    "afterMissingJapanese": 0,
+    "translatedAttributes": 55,
+    "languages": [
+      "vi",
+      "en",
+      "ja"
+    ],
+    "unrelatedContentBytePreserved": true,
+    "rsvpValuesUnchanged": true,
+    "productionUpdated": false
+  }
+}
