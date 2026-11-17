@@ -187,3 +187,22 @@ dialog h2{margin:0 0 12px;color:var(--g2)}
 .language-switch button{border:0;border-radius:999px;padding:7px 10px;background:transparent;color:#fff;font:600 12px 'Be Vietnam Pro',sans-serif;cursor:pointer}
 .language-switch button[aria-pressed="true"]{background:#fff;color:#365b16}
 .language-switch button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+
+/* Japanese typography: system Japanese fonts also work without Google Fonts. */
+html:lang(ja) body,html:lang(ja) .in,html:lang(ja) .btn,
+html:lang(ja) .hint,html:lang(ja) .auto-scroll-btn,
+html:lang(ja) #curtain .welcome-lead,html:lang(ja) #curtain .welcome-caption{
+  font-family:'Yu Gothic','Hiragino Kaku Gothic ProN','Meiryo',sans-serif;
+}
+html:lang(ja) h2,html:lang(ja) h3,html:lang(ja) .serif,
+html:lang(ja) .q,html:lang(ja) .msg,html:lang(ja) .lun,html:lang(ja) .cdt,
+html:lang(ja) .sc{font-family:'Yu Mincho','Hiragino Mincho ProN',serif;font-style:normal}
+html:lang(ja) .q,html:lang(ja) .msg,html:lang(ja) .lun{line-height:1.9}
+html:lang(ja) .sc{font-size:clamp(26px,6vw,36px);line-height:1.5}
+html:lang(ja) .t .sc{font-size:clamp(22px,5.8vw,30px)}
+html:lang(ja) .cdt{font-size:28px;line-height:1.6}
+html:lang(ja) .ev h2,html:lang(ja) .ev h3,html:lang(ja) .par h3,
+html:lang(ja) .gw,html:lang(ja) .btn{letter-spacing:.035em}
+html:lang(ja) .ev .s,html:lang(ja) .ev .ad{overflow-wrap:anywhere}
+html:lang(ja) .gold h2{font-size:clamp(23px,6.2vw,30px)}
+html:lang(ja) .toast{white-space:normal;width:max-content;max-width:calc(100vw - 24px);text-align:center;border-radius:18px;overflow-wrap:anywhere}
